@@ -1,0 +1,27 @@
+13:58:32.389 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @InvalidToken
+13:58:33.391 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:58:34.511 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:58:34.975 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > x-rapidapi-key: asdasdas
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/crowdar.com.ar"}
+
+13:58:35.689 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 711
+1 < 403
+1 < Date: Sat, 29 Oct 2022 16:58:40 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+1 < X-RapidAPI-Proxy-Response: true
+1 < Server: RapidAPI-1.2.8
+{"message":"You are not subscribed to this API."}
+
+13:58:36.678 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/Shorten.feature
